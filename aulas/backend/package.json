@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jtest" 
+    "test": "jtest",
+    "start": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "sqlite3": "^4.1.1"
   },
   "devDependencies": {
-    "jest": "^25.2.3"
+    "jest": "^25.2.3",
+    "nodemon": "^2.0.2"
   }
-  
 }
