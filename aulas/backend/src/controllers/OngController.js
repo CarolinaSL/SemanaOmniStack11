@@ -4,14 +4,14 @@ const crypto = require('crypto');
 module.exports = {
 
     async index(request, response){
-        const ongs = await connection('ongs').select('*');
+        const ongs = await connection('ongs').select('*'); // seleciona todas as ongs para retornar
     
         return response.json(ongs);
     },
 
 
     async create(request, response){
-        const {name, email, whatsapp, city, uf} = request.body;
+        const {name, email, whatsapp, city, uf} = request.body; // pega dados do corpo da requisição
 
         const id = crypto.randomBytes(4).toString('HEX');
     
